@@ -2,6 +2,30 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.sidebar {
+    width: 270px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    height: 270vh;
+    display: block;
+    position: fixed;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    padding: 10px 0;
+}
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
 .container {
     width: 70%;
     margin: auto;

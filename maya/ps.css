@@ -7,10 +7,10 @@ body {
 }
 
 .sidebar {
-    width: 240px;
+    width: 230px;
     background-color: #333;
     color: white;
-    padding: 15px;
+    padding: 20px;
     height: 270vh;
     display: block;
     position: fixed;
@@ -20,7 +20,7 @@ body {
     padding: 0;
 }
 .sidebar ul li {
-    padding: 10px 0;
+    padding: 9px 0;
 }
 .sidebar ul li a {
     color: white;
@@ -39,6 +39,8 @@ h2 {
 
 h1{
     font-size: 20px;
+    margin-top: -10px;
+    font-size: 1.5em;
 }
 
 p {
