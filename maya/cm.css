@@ -1,0 +1,36 @@
+.sidebar {
+    width: 270px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    height: 270vh;
+    display: block;
+    position: fixed;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    padding: 10px 0;
+}
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+@media print{
+    .sidebar, .print-btn{
+        display: none;
+    }
+
+    .main-content{
+        border: none;
+        max-width: 100%;
+        margin-left: 25.4mm;
+        margin-right: 25.4mm;
+    }
+}

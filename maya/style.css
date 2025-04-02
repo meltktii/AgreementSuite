@@ -90,6 +90,8 @@ h3{
 
     .main-content{
         border: none;
-        width: 100%;
+        max-width: 100%;
+        margin-left: 25.4mm;
+        margin-right: 25.4mm;
     }
 }
