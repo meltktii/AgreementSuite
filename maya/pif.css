@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 270px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    height: 270vh;
+    display: block;
+    position: fixed;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    padding: 10px 0;
+}
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: rgb(255, 255, 255);
+}
+
+.header {
+    width: 40%;
+    height: 50px;
+}
+
+.line{
+    border-bottom: 1px solid black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+th {
+    text-align: left;
+    width: 30%;
+    background-color: white;
+}
+
+input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.print-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+.hays{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pwedenato{
+    display: flex;
+}
+
+/* Hide the date picker icon */
+input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+}
+/* Hide the calendar picker in WebKit browsers */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+@page {
+    size: 215.9mm 330mm; /* Folio size (Portrait) */
+    margin: 20mm; /* Set margins */
+}
+
+@media print {
+    body{
+        background-color: white;
+    }
+    .print-button {
+        display: none;
+    }
+    .sidebar, .print-btn {
+        display: none;
+    }
+    .container {
+        border: none;
+        background-color: white;
+        width: 90%;
+        max-width: 210mm; /* Ensure it fits within the page */
+        margin: auto;
+    }
+    input{
+        background-color: white;
+    }
+    .header {
+        width: 40%;
+        height: 40px;
+    }
+}

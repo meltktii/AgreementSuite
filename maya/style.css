@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    display: flex;
+    height: 100vh;
+}
+.sidebar {
+    width: 270px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    height: 270vh;
+    display: block;
+    position: fixed;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    padding: 10px 0;
+}
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+.main-content {
+    flex: 1;
+    padding: 30px;
+    background-color: #ffffff;
+    max-width: 60%;
+    margin: auto;
+    text-align: justify;
+    border: 1px solid #000;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #000;
+    text-align: left;
+    padding: 3px;
+}
+
+th {
+    background-color: #ddd;
+}
+
+.signature{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: -15px;
+}
+
+.names{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.pass{
+    font-weight: bold;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+h3{
+    text-align: center;
+}
+
+@media print{
+    .sidebar, .print-btn{
+        display: none;
+    }
+
+    .main-content{
+        border: none;
+        max-width: 100%;
+        margin-left: 25.4mm;
+        margin-right: 25.4mm;
+    }
+}
